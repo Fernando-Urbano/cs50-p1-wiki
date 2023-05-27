@@ -1,0 +1,10 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ name }} not Found
+{% endblock %}
+
+{% block body %}
+    <h1>"{{ entry }}" entry already exists.</h1>
+    Please, create an entry with another name or edit the "{{ entry }}" in its page.
+{% endblock %}

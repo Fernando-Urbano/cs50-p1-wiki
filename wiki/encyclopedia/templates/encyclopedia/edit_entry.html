@@ -1,0 +1,19 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Wiki Edit or Create Entry
+{% endblock %}
+
+{% block body %}
+    <h1>Edit "{{ entry }}" Entry</h1>
+    <form method="post" action="{% url 'save_edit' %}">
+        {% csrf_token %}
+        <div class="edit-entry">
+            <input type="hidden" name="name" value="{{ entry }}">
+            <textarea class="create-entry" style="height: 300px;" name="content">
+                {{ content }}
+            </textarea>
+        </div>
+        <button class="save-entry" type="submit">Save Edit</button>
+    </form>
+{% endblock %}

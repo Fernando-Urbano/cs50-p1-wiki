@@ -1,0 +1,17 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Wiki Edit or Create Entry
+{% endblock %}
+
+{% block body %}
+    <h1>Create Entry</h1>
+    <form method="post" action="{% url 'save_new' %}">
+        {% csrf_token %}
+        <input class="create-entry" style="font-size: 30px;" type="text" name="name" placeholder="Entry Name">
+        <div class="edit-entry">
+            <textarea class="create-entry" style="height: 300px;" name="content" placeholder="Content entry. Make sure to add a '# {Title of Entry}' in the content's start."></textarea>
+        </div>
+        <button class="save-entry" type="submit">Save</button>
+    </form>
+{% endblock %}

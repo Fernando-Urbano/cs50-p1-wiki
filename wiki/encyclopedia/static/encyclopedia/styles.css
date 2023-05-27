@@ -36,3 +36,19 @@ textarea {
 .sidebar h2 {
     margin-top: 5px;
 }
+
+.create-entry {
+    margin-left: 2%;
+    margin-bottom: 4px;
+    width: 88%;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.save-entry {
+    width: 15%;
+    margin-left: 75%;
+    font-size: 15px;
+    line-height: 15px;
+    text-align: center;
+}
