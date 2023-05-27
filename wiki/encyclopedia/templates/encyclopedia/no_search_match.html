@@ -1,0 +1,19 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {% if search %}
+        Wiki {{ search }} Search
+    {% else %}
+        Wiki no Matches
+    {% endif %}
+{% endblock %}
+
+{% block body %}
+    {% if search %}
+        <h1>Entry "{{ search }}" not Found.</h1>
+        No entry in Wiki has "{{ search }}" in its name.
+    {% else %}
+        <h1>No entry in "Search Encyclopedia" box.</h1>
+        Write the desired entry in the "Search Encyclopedia" box.
+    {% endif %}
+{% endblock %}

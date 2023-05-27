@@ -1,12 +1,11 @@
 {% extends "encyclopedia/layout.html" %}
 
 {% block title %}
-    Encyclopedia
+    Wiki {{ search }} Search
 {% endblock %}
 
 {% block body %}
-    <h1>All Pages</h1>
-
+    <h1>Entry matches for "{{ search }}"</h1>
     <ul>
         {% for entry in entries %}
         <li>
@@ -16,5 +15,4 @@
         </li>
         {% endfor %}
     </ul>
-
 {% endblock %}

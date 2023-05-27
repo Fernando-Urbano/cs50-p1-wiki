@@ -1,0 +1,10 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ name }} not Found
+{% endblock %}
+
+{% block body %}
+    <h1>{{ name }} not Found</h1>
+    {{ name }} is not among the entries. Please add content to {{ name }} page or select another entry.
+{% endblock %}
