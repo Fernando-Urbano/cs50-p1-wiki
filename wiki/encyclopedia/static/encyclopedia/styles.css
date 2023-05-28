@@ -43,9 +43,6 @@ textarea {
     width: 88%;
     font-size: 15px;
     line-height: 15px;
-    border: none;
-    background-color: rgb(157, 157, 157);
-    color: white;
 }
 
 .save-entry {
@@ -53,8 +50,4 @@ textarea {
     margin-left: 75%;
     font-size: 15px;
     line-height: 15px;
-    border: none;
-    background-color: rgb(157, 157, 157);
-    color: white;
-    text-align: center;
 }
