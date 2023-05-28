@@ -45,6 +45,3 @@ def get_entry(title, to_html=True):
         return html_content
     except FileNotFoundError:
         return None
-
-
-get_entry("HTML")

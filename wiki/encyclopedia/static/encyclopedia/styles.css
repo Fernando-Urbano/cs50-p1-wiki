@@ -25,6 +25,8 @@ textarea {
     width: 100%;
     font-size: 15px;
     line-height: 15px;
+    background-color: rgb(232, 232, 232);
+
 }
 
 .sidebar {
@@ -43,6 +45,7 @@ textarea {
     width: 88%;
     font-size: 15px;
     line-height: 15px;
+    background-color: white;
 }
 
 .save-entry {
@@ -50,4 +53,5 @@ textarea {
     margin-left: 75%;
     font-size: 15px;
     line-height: 15px;
+    background-color: white;
 }
