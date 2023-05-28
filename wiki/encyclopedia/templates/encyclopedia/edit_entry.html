@@ -10,9 +10,7 @@
         {% csrf_token %}
         <div class="edit-entry">
             <input type="hidden" name="name" value="{{ entry }}">
-            <textarea class="create-entry" style="height: 300px;" name="content">
-                {{ content }}
-            </textarea>
+            <textarea class="create-entry" style="height: 300px;" name="content">{{ content }}</textarea>
         </div>
         <button class="save-entry" type="submit">Save Edit</button>
     </form>

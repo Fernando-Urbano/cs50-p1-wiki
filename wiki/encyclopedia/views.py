@@ -73,25 +73,21 @@ def edit_entry(request):
     entry_name_in_url = entry_name_in_url.replace('/wiki/', '')
     entry_name = entry_name_in_url.lower().replace("%20", " ")
     entry_name = [e for e in util.list_entries() if e.lower() == entry_name][0]
-    entry_content = util.get_entry(entry_name, to_html=False)
-    if isinstance(entry_content, (tuple, list)):
-        entry_content = "".join(entry_content)
-    match = re.search(r"#", entry_content)
-    entry_content = entry_content[match.start():]
+    content = util.get_entry(entry_name, to_html=False)
+    content = "".join(content) if isinstance(content, (list, tuple)) else content
+    content = re.sub(r'(\r\n){2,}', '\n', content)
     return render(request, "encyclopedia/edit_entry.html", {
         "entry": entry_name,
-        "content": entry_content
+        "content": content
     })
 
 
 def save_edit(request):
     entry_name = request.POST.get("name")
     content = request.POST.get("content")
+    content = "".join(content) if isinstance(content, (list, tuple)) else content
+    content = re.sub(r'(\r\n){2,}', '\r\n', content)
     util.save_entry(entry_name, content)
-    if isinstance(content, (tuple, list)):
-        content = "".join(content)
-    match = re.search(r"#", content)
-    content = content[match.start():]
     return redirect('entry', entry=entry_name)
 
 
