@@ -2,6 +2,7 @@
 This is project number 1 of the CS50 Web Development course with Django and JavaScript lectured by Harvard CS department.
 
 ## Screencast of project
+https://www.youtube.com/watch?v=wkML34wZBQU
 
 ## Entry Page
 Visiting /wiki/TITLE, where TITLE is the title of an encyclopedia entry, renders a page that displays the contents of that encyclopedia entry.
