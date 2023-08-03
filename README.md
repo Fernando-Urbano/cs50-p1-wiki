@@ -2,6 +2,8 @@
 This is project number 1 of the CS50 Web Development course with Django and JavaScript lectured by Harvard CS department.
 
 ## Screencast of project
+Click on the image to be redirected to a video of the program working on youtube.
+
 [<img width="574" alt="image" src="https://github.com/Fernando-Urbano/wikipedia-software/assets/99626376/d6a7cdfa-fca9-4d1b-91c1-4272c0b6e64e">](https://studio.youtube.com/video/FqzSTWCXzH0/edit)
 
 ## Entry Page
